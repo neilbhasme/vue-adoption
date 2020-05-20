@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
+    <h3>Adopt a new companion for yourself</h3>
   </div>
 </template>
 
