@@ -2,18 +2,29 @@
   <div>
     <h3> Dogs for Adoption</h3>
 
-    <b-table striped hover :items="dogs"></b-table>
+    <b-table striped hover :items="dogs">
+      <template v-slot:cell(name)="data">
+        <!-- immediate below line works fine with a-tag also, but another method is to use router-link as used below
+        <a :href="`/pets/${data.index}`">{{ data.value }}</a>
+        This above line works fine-->
+        <router-link :to="`/pets/dogs/${data.index}`">{{ data.value }}</router-link>
+      </template>
+    </b-table>
   </div>
 </template>
 
 <script>
-import dogs from '@/data/dogs'
+import { mapState } from 'vuex'
 
 export default {
   data () {
     return {
-      dogs
     }
+  },
+  computed: {
+    ...mapState([
+      'dogs'
+    ])
   }
 }
 </script>
