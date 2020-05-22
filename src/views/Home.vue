@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home-view-container">
     <h3>Adopt a new companion for yourself</h3>
     <p>Total Available animals {{ animalsCount }}</p>
     <p>Total Available cats {{ getAllCats.length }}</p>
