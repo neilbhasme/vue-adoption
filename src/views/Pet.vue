@@ -1,8 +1,13 @@
 <template>
   <div>
     <h4>Name : {{ animal.name }}</h4>
-    <p>Age : {{ animal.age }} years old</p>
-    <p>Breed : {{ animal.breed }} ({{ this.$route.params.species }})</p>
+    <p><b>Age :</b> {{ animal.age }} years old</p>
+    <p><b>Breed :</b>{{ animal.breed }} ({{ this.$route.params.species }})</p>
+    <p><b>Gender :</b> {{ animal.gender }} </p>
+    <p><b>Color :</b> {{ animal.color }}</p>
+    <p><b>Weight :</b> {{ animal.weight }} Kgs.</p>
+    <p><b>Location :</b> {{ animal.location }}</p>
+    <p><b>Notes :</b> {{ animal.notes }}</p>
   </div>
 </template>
 
