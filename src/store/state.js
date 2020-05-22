@@ -3,5 +3,6 @@ import dogs from '../data/dogs'
 
 export default {
   cats,
-  dogs
+  dogs,
+  pets: [...cats, ...dogs] // flat the array instead of [[cats], [dogs]] if the dots were not used
 }
